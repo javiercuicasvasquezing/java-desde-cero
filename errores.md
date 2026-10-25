@@ -1,13 +1,9 @@
-
 # Bitacora de errores
 
-#que Respondi: 
-declaré un public como Public, cuando eso causaba errores de compilacion, me equivoque y no me di cuenta de que java detecta tanto mayusculas como minusculas.
-#que era: 
-iniciar un programa en java que saludara con Hola mi nombre y mi carrera.
-#porque fale:
-escribir Public en mayuscula.
-#regla correcta:
-public  en minuscula, para que java lo reconozca a compilar.
-#como lo evito:
-prestando atencion en lo que estoy escribiendo y fijandome de las mayusculas y minusculas.
+## 24 oct · Sintaxis Java
+
+**Qué respondí:** Public class Main{ en un archivo llamado hola.java
+**Qué era:** public class Hola { en un archivo llamado Hola.java
+**Por qué fallé:** porque confundi las mayusculas y las minusculas al escribir la sintaxys, escribi rapido y no revise antes de ejecutar.
+**Regla correcta:** las palabras reservadas de Java van en minúscula (public, class, static, void), y el archivo se llama igual que la clase pública, con las mismas mayúsculas.
+**Cómo lo evito:** antes de compilar, revisar la primera línea: palabras reservadas en minúscula y nombre de la clase igual al del archivo.
