@@ -5,7 +5,7 @@ Algoritmo VentaBodega
 	
 	Escribir "Ingrese la tasa del dolar en Bs: "
 	Leer tasaDolar
-	Escribir "Ingrese el precio den USD: "
+	Escribir "Ingrese el precio en USD: "
 	Leer precioUSD
 	Escribir "Ingrese la cantidad del producto: "
 	Leer cantidadProducto
