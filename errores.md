@@ -361,3 +361,26 @@
 **Regla correcta:** toda operación de la prueba de escritorio se escribe, aunque parezca obvia.
 
 **Cómo lo evito:** en la tabla de variables, escribir al lado de cada valor nuevo la operación que lo produjo (48 − 17 = 31).
+
+##Bloque etapa 1 . Variables y asignacion 25/11/2026
+
+Problema de cuadernos (P3)
+
+Multipliqué precio por precio (4 * 4 = 16) sin comprobarlo con la realidad. Patrón: adivinar en vez de probar. Para evitarlo: revisar las unidades y preguntarme si yo pagaría eso.
+Nombres de variable que no dicen lo que guardan (cuadernos para un precio) y un nombre con espacio (Total cuadernos).
+Cuenta incompleta: 4 * 2 sin el = 8.
+
+Comprobaciones del tema 2
+4. En C3 dije que un nombre no puede llevar números. Es falso: lo que no puede es empezar con número. La razón real del error es que a la izquierda de <- solo va una variable.
+5. En las trazas me faltó el tipo de cada línea y el (sin cambio) en los Escribir.
+
+Problema "merienda"
+6. Respondí solo parte de lo que me pedían y dije "ya lo corregí" sin haberlo corregido (pasó con las flechas). Antes de enviar, releer.
+7. Nombres inconsistentes entre secciones: totalGalletas y totalGalleta.
+8. En la traza me salté L16 y las líneas siguientes quedaron corridas.
+9. Puse 15.30 en pantalla sin haber escrito la suma. Cuenta de cabeza.
+10. Tracé lo que quería que dijera el código, no lo que decía (el S/ en L17, L18 y L19).
+11. Al corregir una línea rompí otra: L17 quedó sin coma.
+12. Predicción incompleta: solo los números, sin el texto ni los espacios.
+13. Mayúsculas: definir y como en minúscula.
+14. Commit: escribí it en vez de git, puse espacios dobles y el mensaje no tenía verbo.

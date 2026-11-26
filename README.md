@@ -55,3 +55,14 @@ java Archivo
 - **Venta de harina:** calcula el total de una venta según la cantidad y el precio.
 - **Precio en bolívares:** convierte un precio en dólares a bolívares con la tasa del día.
 - **Inventario del día:** calcula el stock final a partir del stock inicial, las ventas y lo recibido.
+
+##Etapa 1, bloque 1A
+**Tema 1** (cómo trabaja la computadora): repaso aprobado.
+**Tema 2** (variables y asignación: Definir, tipos, <-, Leer): concepto visto. Comprobaciones C1 a C3 aprobadas después de corregir.
+**Problema** "merienda" terminado, con PSeInt y commit.
+**Pendientes**
+Segundo problema del tema 2, más difícil.
+Traza 2 (Si anidados).
+Traza 3 (Para con paso 2).
+Problema del vuelto.
+Paso 3 del "inventario del día".
