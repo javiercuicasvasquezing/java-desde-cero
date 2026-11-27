@@ -384,3 +384,14 @@ Problema "merienda"
 12. Predicción incompleta: solo los números, sin el texto ni los espacios.
 13. Mayúsculas: definir y como en minúscula.
 14. Commit: escribí it en vez de git, puse espacios dobles y el mensaje no tenía verbo.
+
+##Problema 2 26/11/2026
+Calentamiento: puse Precio:2 cuando el código tenía "Precio: ", con espacio. La salida exacta incluye los espacios.
+Calentamiento: dije que Escribir cambiaba precio. Regla: solo <- y Leer cambian una caja; Escribir solo muestra.
+Cuenta encadenada: 180 * 0.18 = 32.4 + 180 = 212.4. Cada = es un solo resultado, así que van dos cuentas separadas.
+Nombres de acción para variables: calcularDescuento en vez de montoDescuento. El nombre dice qué hay en la caja, no qué se hace.
+No vi el valor intermedio: el monto con descuento no estaba ni en las salidas ni en las variables. Si un valor se usa para otro cálculo y no se muestra, va en una variable auxiliar.
+Nombre con letra faltante (montoConDescueto): no lo encontraba leyendo. Técnica: poner las dos versiones una debajo de la otra y comparar letra por letra.
+Al pasar el algoritmo a código escribí DESCUENTO en vez de montoDescuento, o sea, la constante en vez del monto. Mismo patrón de ayer: escribir lo que creo, no lo que dice.
+Correcciones parciales (se repite el error 6 de ayer, 3 veces hoy). Antes de enviar, revisar la lista de correcciones punto por punto.
+Las trazas siguen sin el tipo de línea.

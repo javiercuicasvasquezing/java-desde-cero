@@ -1,0 +1,123 @@
+L1:  Definir precio Como Real
+L2:  Definir cant Como Entero
+L3:  Definir total Como Real
+L4:  precio <- 2.50
+L5:  Escribir "Cantidad:"
+L6:  Leer cant
+L7:  total <- precio * cant
+L8:  precio <- precio - 0.50
+L9:  Escribir "Total: S/", total
+L10: Escribir "Nuevo total: S/ ", precio * cant
+L11: Escribir "Precio: ", precio
+
+    LOGICA
+
+L1: precio = vacio (tipo Real)
+L2: cant = vacio (tipo Entero)
+L3: total = vacio (tipo Real)
+L4: precio = 2.50
+L5: pantalla -> Cantidad:
+L6: cant = 6
+L7: total = 2.50 * 6 = 15
+L8: precio = 2.50 - 0.50 = 2
+L9: (sin cambio) pantalla:Total: S/15
+L10: Escribir (sin cambio) → cuenta: 2 * 6 = 12 → pantalla: Nuevo total: S/ 12
+L11: (sin cambio) pantalla: Precio: 2 
+
+
+
+¿Qué calcula el programa?
+¿Qué se aplica primero y qué después?
+¿Sobre qué monto se aplica lo segundo?
+
+el programa calcula el subtotal, descuento, impuesto y total a pagar, primero se aplica el precio por la cantidad, luego calculamos el descuento, luego calculamos el impuesto con el monto con descuneot y al final calculamos el total a pagar, se aplica al monto con el descuento
+
+PASO 2 – Prueba con números (precio = $40, cantidad = 5)
+
+subtotal = 40 * 5          = 200
+montoDescuento  = 200 * 0.10       = 20
+montoConDescuento  = 200 - 20       = 180    ← auxiliar (no se muestra)
+montoImpuesto  = 180 * 0.18       = 32.4
+totalPagar  = 180 + 32.4       = 212.4
+
+ORDEN DE CÁLCULO
+
+1. subtotal usa: precio y cantidad
+2. montoDescuento  usa: subtotal y DESCUENTO
+3. montoConDescuento  usa: subtotal y montoDescuento
+4. montoImpuesto  usa: montoConDescuento y IMPUESTO
+5. totalPagar usa: montoConDescuento y montoImpuesto
+
+PASO 3
+
+// constantes
+DESCUENTO → Real   (valor: 0.10)
+IMPUESTO → Real   (valor: 0.18)
+// entradas
+precio → Real
+cantidad → Entero
+// auxiliares
+montoConDescuento → Real
+
+PASO 4
+
+// salidas
+subtotal -> Real
+montoDescuento -> Real
+montoImpuesto -> Real
+totalPagar -> Real
+
+
+Algoritmo
+
+1. def IMPUESTO Const -> Real
+2. def DESCUENTO Const -> Real
+3. def precio -> Real
+4. def cantidad -> Entero
+5. def montoConDescuento -> Real
+6. def subtotal -> Real
+7. def montoDescuento -> Real
+8. def montoImpuesto -> Real 
+9. def totalPagar -> Real
+10. IMPUESTO <- 0.18
+11. DESCUENTO <- 0.10
+12. Escribimos "Ingrese el precio unitario del producto: "
+13. Leemos precio
+14. Escribimos "Ingrese la cantidad: "
+15. Leemos cantidad
+16. calculamos subtotal <- cantidad * precio
+17. calculamos montoDescuento <- subtotal * DESCUENTO
+18. calculamos montoConDescuento <- subtotal - montoDescuento
+19. calculamos montoImpuesto <- montoConDescuento * IMPUESTO
+20. calculamos totalPagar <- montoConDescuento + montoImpuesto
+21. mostramos "SUBTOTAL: $ ", subtotal
+22. mostramos "DESCUENTO: $ ", montoDescuento 
+23. mostramos "IMPUESTO: $ ", montoImpuesto
+24. mostramos "TOTAL A PAGAR: $ ", totalPagar
+
+Algoritmo Problema_2
+	L1:Definir IMPUESTO Como Real
+	L2:Definir DESCUENTO Como Real
+	L3:Definir precio Como Real
+	L4:Definir cantidad Como Entero
+	L5:Definir montoConDescuento Como Real
+	L6:Definir subtotal Como Real
+	L7:Definir montoDescuento Como Real
+	L8:Definir montoImpuesto Como Real
+	L9:Definir totalPagar Como Real
+	L10:IMPUESTO <- 0.18
+	L11:DESCUENTO <- 0.10
+	L12:Escribir "Ingrese el precio unitario: "
+	L13:Leer precio
+	L14:Escribir "Ingrese la cantidad: "
+	L15:Leer cantidad
+	L16:subtotal <- precio * cantidad
+	L17:montoDescuento <- subtotal * DESCUENTO
+	L18:montoConDescuento <- subtotal - montoDescuento
+	L19:montoImpuesto <- montoConDescuento * IMPUESTO
+	L20:totalPagar <- montoConDescuento + montoImpuesto
+	L21:Escribir "SUBTOTAL: $ ", subtotal
+	L22:Escribir "DESCUENTO: $ ", montoDescuento
+	L23:Escribir "IMPUESTO: $ ", montoImpuesto
+	L24:Escribir "TOTAL A PAGAR: $ ", totalPagar
+FinAlgoritmo

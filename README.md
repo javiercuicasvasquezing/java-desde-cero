@@ -66,3 +66,6 @@ Traza 2 (Si anidados).
 Traza 3 (Para con paso 2).
 Problema del vuelto.
 Paso 3 del "inventario del día".
+
+Tema 2: concepto nuevo, variables auxiliares y constantes en PSeInt (MAYÚSCULAS, se asignan una vez y no se cambian).
+Problema 2 (descuento e impuesto): pasos 1 a 7 hechos. Faltan traza, predicción, PSeInt y commit.
